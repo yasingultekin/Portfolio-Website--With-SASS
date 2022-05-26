@@ -1,6 +1,7 @@
 //*****************************************************
 //*   RESPONSIVE
 //*****************************************************
+
 @include media-xsm {
     .nav {
       padding: 0.5rem;
@@ -49,6 +50,7 @@
       }
     }
   }
+  
   @include media-md {
     .nav {
       &__item {
@@ -62,6 +64,7 @@
       width: 100%;
     }
   }
+  
   @include media-lg {
     .nav {
       &__item {
@@ -71,6 +74,7 @@
         font-size: 1.5rem;
       }
     }
+  
     .projects__item {
       width: 50%;
     }
@@ -78,8 +82,10 @@
       flex-direction: row;
     }
   }
+  
   @include media-xl {
     .projects__item {
       width: 33%;
     }
   }
+  

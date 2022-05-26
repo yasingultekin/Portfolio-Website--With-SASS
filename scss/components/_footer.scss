@@ -1,18 +1,22 @@
-
-
+//*****************************************************
+//*   FOOTER
+//*****************************************************
 
 .link-style {
-    a {
+    a{
         padding: 0.4rem;
         @include transition(1s);
 
-        &:hover {
+        &:hover{
             color: $secondary-color;
         }
     }
 }
 
-footer.horizontal {
+
+
+footer.horizontal{
+    // border: 2px solid red;
     height: 10vh;
     display: flex;
     justify-content: space-between;
@@ -21,27 +25,28 @@ footer.horizontal {
     @extend .link-style;
 }
 
-footer.vertical {
+
+footer.vertical{
+    // border: 2px solid red;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     padding: 2rem;
     margin-bottom: 1rem;
-
-    .social-icons {
+    .social-icons{
         display: flex;
         flex-direction: column;
         position: fixed;
         bottom: 1rem;
         @extend .link-style;
     }
-
-    .copyright {
+    .copyright{
         position: fixed;
         bottom: 1rem;
         right: 3rem;
-        transform:rotate(90deg) translate(-3rem, -5rem)
+        transform: rotate(90deg) translate(-3rem, -5rem);
     }
+
 }
 
 
@@ -49,6 +54,7 @@ footer.middle {
     height: 20vh;
     display: flex;
     flex-direction: column;
+    // border: 2px solid red;
     justify-content: flex-start;
     align-items: center;
     padding: 1rem;

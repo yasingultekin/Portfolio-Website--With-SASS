@@ -1,25 +1,30 @@
-.contact-bgImg-container {
+//*****************************************************
+//*   CONTACT PAGE
+//*****************************************************
+
+
+.contact-bgImg-container{
     @include bgImage(100vh, $main-bgImage-path);
 
-    nav {
+    nav{
         height: 40vh;
-
     }
 }
 
-.contact {
+.contact{
+    // border: 2px solid red;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
 
-    h2 {
-
+    h2{
         font-size: 3rem;
         margin-bottom: 2rem;
     }
 
-    &__list {
+    &__list{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -29,7 +34,9 @@
         font-size: 1.5rem;
     }
 
-    .text-secondary {
+    .text-secondary{
         color: $secondary-color;
     }
+
+
 }

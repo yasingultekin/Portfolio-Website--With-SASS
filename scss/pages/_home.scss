@@ -1,8 +1,12 @@
-.home-bgImg-container {
-    @include bgImage(100vh, $main-bgImage-path)
+//*****************************************************
+//*   HOME PAGE
+//*****************************************************
+
+.home-bgImg-container{
+    @include bgImage(100vh,$main-bgImage-path )
 }
 
-.home {
+.home{
     // border: 2px solid red;
     height: 80vh;
     display: flex;
@@ -10,16 +14,16 @@
     justify-content: center;
     text-align: center;
 
-    &__name {
+    &__name{
         font-size: 5rem;
         padding: 1rem;
         margin-bottom: 1rem;
         border-bottom: 2px solid #fff;
 
-        &--last {
+        &--last{
             color: red;
             font-weight: 700;
         }
+
     }
 }
-
